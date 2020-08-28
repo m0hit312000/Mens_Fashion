@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background: url('../../public/img/yellow-926728_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: .2fr .8fr;
+
+}
+
+header {
+   position: relative; 
+   display: grid;
+   grid-template-rows: .6fr .3fr .1fr;
+   width: 100%;
+   background-color: #000000;
+   color: #FFFFFF;
+}
+
+.logo {
+   display: flex;
+   flex-direction: row;
+   align-self: center;
+   justify-content: center;
+   font-family: 'Dancing Script', cursive;
+   font-size: 5rem;
+   padding: 10px;
+}
+
+.navbar {
+    align-self: center;
+}
+
+.navbar ul {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size: 30px;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+}
+
+.container .carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container .carousel img {
+    height: 600px;
+    width: 500px;
+    padding: 0 50px 0 50px;
+}
+
+.container.carousel img.active {
+
+}
+
+.container .carousel img.active.left {
+    opacity: 0.8;
+    transform: scale(0.8);
+    align-self: center;
+}
+
+.container .carousel img.active.middle {
+    opacity: 1;
+    transform: scale(1.2);
+    align-self: center;
+}
+
+.container .carousel img.active.right {
+    opacity: 0.8;
+    transform: scale(0.8);
+    align-self: center;
+}
+
+.fashion {
+    color: #FFFFFF;
+    display: flex;
+    z-index: 1;
+    transform: rotateX(-90deg);
+}
+
