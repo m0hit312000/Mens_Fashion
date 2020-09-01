@@ -59,6 +59,6 @@ window.onload = () => {
     
     setInterval(() => {
        move();  
-    }, 3000);
+    }, 5000);
 
 }
