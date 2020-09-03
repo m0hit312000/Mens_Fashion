@@ -4,28 +4,27 @@
   overflow-x: hidden;
   box-sizing: border-box;
 }
-html, body {
-    height: 100vh;
-    width: 100vw;
-    background: url('../../public/img/yellow-926728_1920.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-template-rows: .2fr .8fr ;
 
+html, body {
+    width: 100%;
 }
 
 header {
-   position: relative; 
-   display: grid;
-   grid-template-rows: .7fr .3fr;
-   width: 100%;
-   background-color: #000000;
-   color: #FFFFFF;
+    position: relative; 
+    display: grid;
+    height: 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo"
+    "navbar";
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 .logo {
+   grid-area: logo; 
    display: flex;
    flex-direction: row;
    align-self: center;
@@ -36,20 +35,22 @@ header {
 }
 
 .navbar {
-    align-self: center;
+    grid-area: navbar;
 }
 
 .navbar ul {
     display: flex;
-    text-decoration: none;
+    height: 100%;
     justify-content: center;
-    flex-wrap: nowrap;
     font-size: 1.8rem;
     font-family: 'Baloo Tamma 2', cursive;
 }
 
 .navbar ul li {
-    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 100%;
     cursor: pointer;
     list-style: none;
     margin-right: 20px;
@@ -61,8 +62,7 @@ header {
     padding: 2px;
 }
 
-
-.navbar ul li a:hover {
+.navbar ul li :hover {
     background-color: #FFFFFF;
     color: #000000;
     transition: all 0.6s ease-out;
@@ -70,11 +70,15 @@ header {
 
 .container {
     position: relative;
+    height: 80vh;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 20px;
     overflow: hidden;
+    background: url('../../public/img/yellow-926728_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container .carousel {
@@ -82,13 +86,15 @@ header {
     flex-direction: row;
     width: 100%;
     overflow: hidden;
+    align-content: center;
 }
 
 .container .carousel img {
-    height: 630px;
-    width: 450px;
+    height: 82%;
+    justify-items: center;
+    width: 25%;
     opacity: 0;     
-    transform: translate(calc(100%), 60%) scale(0.6);
+    transform: translate(calc(100% + 60rem), 60%) scale(0.6);
     -webkit-box-shadow: 0px 13px 14px -2px rgba(0,0,0,0.41);
     -moz-box-shadow: 0px 13px 14px -2px rgba(0,0,0,0.41);
     box-shadow: 0px 13px 14px -2px rgba(0,0,0,0.41);
@@ -107,30 +113,30 @@ header {
 .container .carousel img.active.prev {
     align-self: center;
     opacity: 0.8;
-    transform: translate(-158%, 19%) scale(0.8);
+    transform: translate(-155%, 19%) scale(0.8);
 }
 
 .container .carousel img.active.middle {
     align-self: center;
     opacity: 1;
     z-index: 1;
-    transform: translate(-42%, 20%);
+    transform: translate(-39%, 20%);
 }
 
 .container .carousel img.active.next {
     align-self: center;
     opacity: 0.8;
-    transform: translate(75%, 19%) scale(0.8);
+    transform: translate(80%, 19%) scale(0.8);
 }
 
 div.fashion {
     position: absolute;
-    top: 35vh; 
-    z-index: 10;
+    top: 37vh; 
+    z-index: 1;
     color: #FFFFFF;
-    font-size: 5.5rem;
-    letter-spacing: 3rem;
-    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 3.6rem;
+    font-family: 'Gayathri', sans-serif;
     animation: pop-in 1.3s  cubic-bezier(0, 0.6, 0.3, 1.2) forwards;
 }
 
@@ -159,3 +165,13 @@ div.fashion {
               transform: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
