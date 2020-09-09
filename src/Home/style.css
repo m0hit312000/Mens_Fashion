@@ -169,10 +169,11 @@ div.fashion {
 
 .section-1 {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 15% 30% 20% 20% 15%;
     grid-template-rows: 15% 20% 20% 20% 25%;
-    row-gap: 20px;
-    column-gap: 20px;
+    background-color: floralwhite;
+    row-gap: 10px;
+    column-gap:10px;
     width: 100%;
     height: 230vh;
     overflow: hidden;
@@ -192,75 +193,215 @@ div.fashion {
 }
 
 .street {
-    grid-column: 1 / 3;
+    grid-column: 2 / 3;
     grid-row: 2 / 4;
     display: flex;
     flex-wrap: wrap;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
 }
 
-.street div {
+.street .image {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
-.street div img {
-    width: 100%;
+.street .image img {
     height: 100%;
+    transition: all 0.3s ease-out;
+}
+
+.street .quote-1 {
+    position: absolute;
+    align-self: center;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    opacity: 0;
+    color: #FFFFFF;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 3.3rem;
+    letter-spacing: 20px;
+    user-select: none;
+    transition: all 0.3s ease-out;
+}
+
+.quote-1 span {
+    margin-left: 20px;
+}
+
+.street:hover {
+    -webkit-box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+}
+
+.street:hover > .image > img {
+    opacity: .5;
+}
+
+.street:hover .quote-1 {
+    opacity: 1;
 }
 
 .shades {
-    grid-column: 3 / 6;
+    grid-column: 3 / 5;
     grid-row: 2 / 3;
     display: flex;
     flex-wrap: wrap;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
 }
 
-.shades div {
+.shades .image {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
-.shades div img {
+.shades .image img {
     width: 100%;
     margin-top: -33%;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
+
+.shades .quote-2 {
+    position: absolute;
+    max-width: 100%;
+    opacity: 0;
+    color: #FFFFFF;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 4.8rem;
+    letter-spacing: 20px;
+    align-self: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+}
+
+.quote-2 span {
+    margin-left: 20px;
+}
+
+.shades:hover {
+    -webkit-box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+}
+
+.shades:hover > .image > img {
+    opacity: .5;
+}
+
+.shades:hover .quote-2 {
+    opacity: 1;
 }
 
 .formal {
-    grid-column: 3 / 6;
+    grid-column: 3 / 5;
     grid-row: 3 / 5;
     display: flex;
     flex-wrap: wrap;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
 }
 
-.formal div {
+.formal .image {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
-.formal div img {
+.formal .image img {
     margin-top: -30%;
     width: 100%;
+    transition: all 0.3s ease-out;
+}
+
+.formal .quote-3 {
+    position: absolute;
+    max-width: 100%;
+    opacity: 0;
+    color: #FFFFFF;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 5rem;
+    letter-spacing: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.quote-3 span {
+    margin-left: 20px;
+}
+
+.formal:hover {
+    -webkit-box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+}
+
+.formal:hover > .image > img {
+    opacity: .5;
+}
+
+.formal:hover .quote-3 {
+    opacity: 1;
 }
 
 .beard {
-    grid-column: 1 / 3;
+    grid-column: 2 / 3;
     grid-row: 4 / 5;
     display: flex;
     flex-wrap: wrap;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
 }
 
-.beard div {
+.beard .image {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
-.beard div img {
+.beard .image img {
     margin-top: -50%;
     width: 100%;
+    transition: all 0.3s ease-out;
+}
+
+.beard .quote-4 {
+    position: absolute;
+    max-width: 100%;
+    opacity: 0;
+    color: #FFFFFF;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 3.3rem;
+    letter-spacing: 20px;
+    align-self: center;
+    transition: all 0.3s ease-out;
+}
+
+.quote-4 span {
+    margin-left: 20px;
+}
+
+.beard:hover {
+    -webkit-box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
+}
+
+.beard:hover > .image > img {
+    opacity: .5;
+}
+
+.beard:hover .quote-4 {
+    opacity: 1;
 }
 
 .banner-2 {
@@ -269,30 +410,39 @@ div.fashion {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .banner-2 .image {
     width: 100%;
     overflow: hidden;
-    height: 100%;
+    max-height: 100%;
     background-color: rgba(0, 0, 0, 0.8)
 }
 
 .banner-2 .image img {
     width: 100%;
     margin-top: -20%;
-    opacity: .7;
+    opacity: .5;
 }
 
 .banner-2 .quote-5 {
     position: absolute;
-    width: 100%;
-    border: 2px solid red;
+    max-width: 100%;
     opacity: 1;
     color: #FFFFFF;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 3.3rem;
+    letter-spacing: 20px;
+    align-self: center;
+}
+
+.quote-5 span {
+    margin-left: 20px;
 }
 
 .quote-5 span:nth-child(4) {
     background-color: rgba(255, 255, 255, 0.6);
+    padding-left: 10px;
     color: #000000;
 }
