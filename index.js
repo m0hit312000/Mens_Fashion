@@ -62,3 +62,5 @@ window.onload = () => {
     }, 5000);
 }
 
+
+const street = document.querySelector('.street');
