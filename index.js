@@ -63,4 +63,9 @@ window.onload = () => {
 }
 
 
-const street = document.querySelector('.street');
+document.getElementById('categ').onmouseover = function(){
+    document.getElementsByClassName('drop-down').style.display = 'block';
+}
+document.getElementById('categ').onmouseout = function(){
+    document.getElementsByClassName('drop-down').style.display = 'none';
+}
