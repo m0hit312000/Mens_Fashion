@@ -131,19 +131,19 @@ header {
 
 div.fashion {
     position: absolute;
-    top: 37vh; 
+    top: 30vh; 
     z-index: 1;
     color: #FFFFFF;
-    font-size: 5rem;
+    font-size: 13rem;
     letter-spacing: 3.6rem;
-    font-family: 'Gayathri', sans-serif;
+    font-family: 'Oswald', sans-serif;
     animation: pop-in 1.3s  cubic-bezier(0, 0.6, 0.3, 1.2) forwards;
 }
 
 @keyframes pop-in {
     0% {
       opacity: 0;
-              transform: translateX(-100rem) scale(.8);
+              transform: translateX(-100rem) rotate(-90deg) scale(.8);
     }
     100% {
       opacity: 1;
@@ -467,6 +467,7 @@ footer {
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
+    justify-self: center;
 }
 
 .posts h2 {
@@ -494,6 +495,7 @@ footer {
     grid-row: 1 / 2;
     display: flex;
     flex-direction: column;
+    justify-self: center;
     color: #FFFFFF;
 } 
 
@@ -521,6 +523,7 @@ footer {
     grid-row: 1 / 2;
     display: flex;
     flex-direction: column;
+    justify-self: center;
     color: #FFFFFF;
 }
 
@@ -556,5 +559,17 @@ footer {
     grid-column: 1 / 6;
     grid-row: 2 / 3;
     background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
+.social a {
+    margin-right: 50px;
+}
+
+.social a i {
+    font-size: 50px;
+}

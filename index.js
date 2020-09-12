@@ -62,10 +62,3 @@ window.onload = () => {
     }, 5000);
 }
 
-
-document.getElementById('categ').onmouseover = function(){
-    document.getElementsByClassName('drop-down').style.display = 'block';
-}
-document.getElementById('categ').onmouseout = function(){
-    document.getElementsByClassName('drop-down').style.display = 'none';
-}
