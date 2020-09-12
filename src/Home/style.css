@@ -198,6 +198,7 @@ div.fashion {
     display: flex;
     flex-wrap: wrap;
     transition: all 0.2s ease-out;
+    background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
 }
 
@@ -205,12 +206,10 @@ div.fashion {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.8)
-}
-
-.street .image img {
-    width: 100%;
-    height: 100%;
+    background-image: url(https://images.pexels.com/photos/2315303/pexels-photo-2315303.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
     transition: all 0.3s ease-out;
 }
 
@@ -240,7 +239,7 @@ div.fashion {
     box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
 }
 
-.street:hover > .image > img {
+.street:hover > .image{
     opacity: .5;
 }
 
@@ -255,20 +254,17 @@ div.fashion {
     flex-wrap: wrap;
     transition: all 0.2s ease-out;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .shades .image {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.8)
-}
-
-.shades .image img {
-    /* height: 100%; */
-    width: 100%;
-    margin-top: -33%;
-    opacity: 1;
+    background-image: url(https://images.unsplash.com/photo-1497551060073-4c5ab6435f12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
     transition: all 0.3s ease-out;
 }
 
@@ -295,7 +291,7 @@ div.fashion {
     box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
 }
 
-.shades:hover > .image > img {
+.shades:hover > .image{
     opacity: .5;
 }
 
@@ -310,18 +306,17 @@ div.fashion {
     flex-wrap: wrap;
     transition: all 0.2s ease-out;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
 .formal .image {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.8)
-}
-
-.formal .image img {
-    /* margin: auto; */
-    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1508243771214-6e95d137426b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
     transition: all 0.3s ease-out;
 }
 
@@ -346,7 +341,7 @@ div.fashion {
     box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
 }
 
-.formal:hover > .image > img {
+.formal:hover > .image{
     opacity: .5;
 }
 
@@ -361,18 +356,17 @@ div.fashion {
     flex-wrap: wrap;
     transition: all 0.2s ease-out;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8)
 }
 
 .beard .image {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.8)
-}
-
-.beard .image img {
-    margin-top: -50%;
-    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1539063955936-cf9760e4ed30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
     transition: all 0.3s ease-out;
 }
 
@@ -398,7 +392,7 @@ div.fashion {
     box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.75);
 }
 
-.beard:hover > .image > img {
+.beard:hover > .image{
     opacity: .5;
 }
 
@@ -413,18 +407,17 @@ div.fashion {
     flex-wrap: wrap;
     overflow: hidden;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .banner-2 .image {
     width: 100%;
     overflow: hidden;
     max-height: 100%;
-    background-color: rgba(0, 0, 0, 0.8)
-}
-
-.banner-2 .image img {
-    width: 100%;
-    margin-top: -20%;
+    background-image: url(https://images.unsplash.com/photo-1465479423260-c4afc24172c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
     opacity: .5;
 }
 
@@ -450,7 +443,6 @@ div.fashion {
 }
 
 footer {
-    /* margin-top: 10px; */
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: 85% 15%;
