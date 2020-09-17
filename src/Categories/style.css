@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+header {
+    position: relative; 
+    display: grid;
+    height: 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo"
+    "navbar";
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.logo {
+    grid-area: logo; 
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    animation: pop-out 1.6s  cubic-bezier(0, 0.6, 0.3, 1.2) forwards;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.navbar ul {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.navbar ul li {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 2px;
+}
+
+.navbar ul li :hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all 0.6s ease-out;
+}
+
+.stories {
+    display: grid;
+    height: 240px;
+    align-content: center;
+    margin: auto;
+    width: 80%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+}
+
+.watches {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watches .image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(https://images.pexels.com/photos/1401847/pexels-photo-1401847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    cursor: pointer;
+}
+
+.belts {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.belts .image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(https://images.pexels.com/photos/1023937/pexels-photo-1023937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    cursor: pointer;
+}
+
+.hats {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hats .image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(https://images.pexels.com/photos/396777/pexels-photo-396777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    cursor: pointer;
+}
+
+.ties {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ties .image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(https://images.unsplash.com/photo-1598934553572-fe4a46d30c99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    cursor: pointer;
+}
+
+.hoodies {
+    grid-column: 5/6;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hoodies .image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url(https://images.pexels.com/photos/1666779/pexels-photo-1666779.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 85% 15%;
+    background-color: #000000;
+    width: 100%;
+    height: 450px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.posts {
+    padding: 50px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    justify-self: center;
+}
+
+.posts h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.posts ul li {
+   margin-bottom: 15px;
+}
+
+.posts ul li a {
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.tweets {
+    padding: 50px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    color: #FFFFFF;
+} 
+
+.tweets h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.tweets ul li {
+    margin-bottom: 15px;
+}
+
+.tweets ul li a {
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.newsletter {
+    padding: 50px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    color: #FFFFFF;
+}
+
+.newsletter h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.newsletter form {
+    margin-bottom: 30px;
+}
+
+.newsletter form input {
+    height: 40px;
+    width: 300px;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.newsletter form button {
+    height: 40px;
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+    width: 70px;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+}
+
+.social {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social a {
+    margin-right: 50px;
+}
+
+.social a i {
+    font-size: 50px;
+}
