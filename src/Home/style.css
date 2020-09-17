@@ -68,6 +68,12 @@ header {
     transition: all 0.6s ease-out;
 }
 
+.navbar ul li .active {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all 0.6s ease-out;
+}
+
 .container {
     position: relative;
     height: 80vh;

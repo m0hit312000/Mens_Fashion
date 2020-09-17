@@ -68,6 +68,27 @@ header {
     transition: all 0.6s ease-out;
 }
 
+.navbar ul li .active {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all 0.6s ease-out;
+}
+
+@keyframes pop-out {
+    0% {
+      opacity: 0;
+              transform: translateY(-40rem) scale(.8);
+    }
+    50% {
+      opacity: .5;
+              transform: translateY(-20rem);  
+    }
+    100% {
+      opacity: 1;
+              transform: none;
+    }
+}
+
 .stories {
     display: grid;
     height: 270px;
@@ -213,13 +234,167 @@ header {
     box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
 }
 
+.search_box {
+    margin-top: 30px;
+    height: 300px;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
 
+.search_box p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.5rem; 
+}
 
+.search_box form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.search_box form input {
+    height: 50px;
+    width: 400px;
+    padding: 10px;
+    font-size: 30px;
+    border-color: none;
+    outline: none;
+}
 
+.search_box form span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    transform: translate(40px, 0);
+    width: 120px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+}
 
+.banner-1 {
+    margin-top: 150px;
+    height: 150px;
+    width: 100%;
+}
 
+.template {
+    display: grid;
+    margin: 150px auto 0 auto;
+    height: 800px;
+    width: 90%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    row-gap: 10px;
+    column-gap: 10px; 
+    overflow: hidden;
+}
 
+.jackets {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(https://images.unsplash.com/photo-1551537482-f2075a1d41f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-position:center center;
+	background-repeat:no-repeat;
+    background-size:cover;
+    cursor: pointer;
+}
+
+.sweatshirts {
+    grid-column: 2/3;
+    grid-row: 1/2;  
+    background-image: url(https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    cursor: pointer;
+}
+
+.shoes {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url(https://images.pexels.com/photos/9379/drinking-alley-fun-bowling-9379.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    cursor: pointer;
+}
+
+.hair {
+    grid-column: 3/5;
+    grid-row: 1/3;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(https://images.pexels.com/photos/1813346/pexels-photo-1813346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    cursor: pointer;
+}
+
+.hair .text {
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    background-color: rgba(0,0,0,0.75);  
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+.hair .main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: white;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 5rem;
+    letter-spacing: 7px;  
+    width: 60%;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+.hair:hover > .text{
+    opacity: 1;
+}
+
+.hair:hover > .main{
+    opacity: 1;
+}
+
+.wallets {
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-image: url(https://images.unsplash.com/photo-1517254797898-04edd251bfb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    cursor: pointer;
+}
+
+.tshirts {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    background-image: url(https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=8);
+    background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    cursor: pointer;
+}
 
 
 
@@ -235,6 +410,7 @@ header {
 
 
 footer {
+    margin-top: 150px;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-template-rows: 85% 15%;
