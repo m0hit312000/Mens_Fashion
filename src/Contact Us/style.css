@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+header {
+    position: relative; 
+    display: grid;
+    height: 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo"
+    "navbar";
+    width: 100%;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.logo {
+    grid-area: logo; 
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    animation: pop-out 1.6s  cubic-bezier(0, 0.6, 0.3, 1.2) forwards;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.navbar ul {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.navbar ul li {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 2px;
+}
+
+.navbar ul li :hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all 0.6s ease-out;
+}
+
+.navbar ul li .act {
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all 0.6s ease-out;
+}
+
+@keyframes pop-out {
+    0% {
+      opacity: 0;
+              transform: translateY(-40rem) scale(.8);
+    }
+    50% {
+      opacity: .5;
+              transform: translateY(-20rem);  
+    }
+    100% {
+      opacity: 1;
+              transform: none;
+    }
+}
+
+main {
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 65%;
+    height: 600px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 30px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    /* border-bottom: 3px solid rgb(235, 162, 46); */
+}
+
+form.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    row-gap: 20px;
+    column-gap: 50px;
+    align-items: center;
+}
+
+main form label {
+    grid-column: 1/2;
+}
+main form input {
+    grid-column: 1/2;
+}
+
+textarea {
+    grid-column: 2/3;
+    grid-row: 2/7;
+}
+
+button {
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+
+.name_label {
+    font-size: 1.6rem;
+}
+
+.name_input {
+    height: 40px;
+    font-size: 1.6rem;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+}
+
+.email_label {
+    font-size: 1.6rem;
+}
+
+.email_input {
+    height: 40px;
+    font-size: 1.6rem;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+}
+
+.robot {
+    font-size: 1.6rem;
+    grid-row: 6/7;
+}
+
+.check {
+    margin-left: 30px;
+    font-size: 1.6rem;
+    grid-row: 6/7;
+}
+
+.message {
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+    border: none;
+    border-left: 2px solid grey;
+    outline: none;
+}
+
+.send {
+    height: 40px;
+    width: 200px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;    
+}
+
+
+footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 85% 15%;
+    background-color: #000000;
+    width: 100%;
+    height: 450px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.posts {
+    padding: 50px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    justify-self: center;
+}
+
+.posts h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.posts ul li {
+   margin-bottom: 15px;
+}
+
+.posts ul li a {
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.tweets {
+    padding: 50px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    color: #FFFFFF;
+} 
+
+.tweets h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.tweets ul li {
+    margin-bottom: 15px;
+}
+
+.tweets ul li a {
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.newsletter {
+    padding: 50px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    color: #FFFFFF;
+}
+
+.newsletter h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.newsletter form {
+    margin-bottom: 30px;
+}
+
+.newsletter form input {
+    height: 40px;
+    width: 300px;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.newsletter form button {
+    height: 40px;
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+    width: 70px;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+}
+
+.social {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social a {
+    margin-right: 50px;
+}
+
+.social a i {
+    font-size: 50px;
+}
