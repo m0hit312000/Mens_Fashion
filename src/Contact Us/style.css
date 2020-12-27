@@ -133,6 +133,10 @@ button {
     font-size: 1.6rem;
 }
 
+.name_input:invalid {
+    border-bottom-color: red;
+}
+
 .name_input {
     height: 40px;
     font-size: 1.6rem;
@@ -152,6 +156,11 @@ button {
     border-bottom: 2px solid grey;
     outline: none;
 }
+
+.email_input:invalid {
+    border-bottom-color: red;
+}
+
 
 .robot {
     font-size: 1.6rem;

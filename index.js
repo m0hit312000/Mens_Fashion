@@ -62,3 +62,10 @@ window.onload = () => {
     }, 5000);
 
 }
+
+
+const validate = (e) => {
+    var name_field = document.contact.name.value;
+    var email = document.querySelector('.email_input');
+    verifMail = email.findOf
+}
